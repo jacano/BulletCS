@@ -100,6 +100,10 @@ public class btCollisionObjectWrapper : global::System.IDisposable {
     } 
   }
 
+  public btCollisionObjectWrapper(btCollisionObjectWrapper parent, btCollisionShape shape, btCollisionObject collisionObject, btTransform worldTransform, int partId, int index) : this(BulletPINVOKE.new_btCollisionObjectWrapper(btCollisionObjectWrapper.getCPtr(parent), btCollisionShape.getCPtr(shape), btCollisionObject.getCPtr(collisionObject), btTransform.getCPtr(worldTransform), partId, index), true) {
+    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
+  }
+
   public btTransform getWorldTransform() {
     btTransform ret = new btTransform(BulletPINVOKE.btCollisionObjectWrapper_getWorldTransform(swigCPtr), false);
     return ret;

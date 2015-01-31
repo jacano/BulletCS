@@ -9,7 +9,6 @@
  * ----------------------------------------------------------------------------- */
 
 #define SWIGCSHARP
-#define SWIG_DIRECTORS
 
 
 #ifdef __cplusplus
@@ -310,52 +309,6 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterWStringCallback_Bullet(SWIG_CSharpWStrin
   SWIG_csharp_wstring_callback = callback;
 }
 
-/* -----------------------------------------------------------------------------
- * director.swg
- *
- * This file contains support for director classes so that C# proxy
- * methods can be called from C++.
- * ----------------------------------------------------------------------------- */
-
-#if defined(DEBUG_DIRECTOR_OWNED)
-#include <iostream>
-#endif
-#include <string>
-#include <exception>
-
-namespace Swig {
-  /* Director base class - not currently used in C# directors */
-  class Director {
-  };
-
-  /* Base class for director exceptions */
-  class DirectorException : public std::exception {
-  protected:
-    std::string swig_msg;
-
-  public:
-    DirectorException(const char *msg) : swig_msg(msg) {
-    }
-
-    DirectorException(const std::string &msg) : swig_msg(msg) {
-    }
-
-    virtual ~DirectorException() throw() {
-    }
-
-    const char *what() const throw() {
-      return swig_msg.c_str();
-    }
-  };
-
-  /* Pure virtual method exception */
-  class DirectorPureVirtualException : public DirectorException {
-  public:
-    DirectorPureVirtualException(const char *msg) : DirectorException(std::string("Attempt to invoke pure virtual method ") + msg) {
-    }
-  };
-}
-
 
 #include <stdexcept>
 
@@ -424,14 +377,6 @@ SWIGINTERN void SWIG_CSharpException(int code, const char *msg) {
 
 	#include "btBulletCollisionCommon.h"
 	#include "btBulletDynamicsCommon.h"
-
-
-
-/* ---------------------------------------------------
- * C++ director class methods
- * --------------------------------------------------- */
-
-#include "bullet_wrap.h"
 
 
 #ifdef __cplusplus
@@ -8714,6 +8659,32 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btCollisionObjectWrapper_m_index_get(void * ja
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btCollisionObjectWrapper(void * jarg1, void * jarg2, void * jarg3, void * jarg4, int jarg5, int jarg6) {
+  void * jresult ;
+  btCollisionObjectWrapper *arg1 = (btCollisionObjectWrapper *) 0 ;
+  btCollisionShape *arg2 = (btCollisionShape *) 0 ;
+  btCollisionObject *arg3 = (btCollisionObject *) 0 ;
+  btTransform *arg4 = 0 ;
+  int arg5 ;
+  int arg6 ;
+  btCollisionObjectWrapper *result = 0 ;
+  
+  arg1 = (btCollisionObjectWrapper *)jarg1; 
+  arg2 = (btCollisionShape *)jarg2; 
+  arg3 = (btCollisionObject *)jarg3; 
+  arg4 = (btTransform *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btTransform const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (int)jarg5; 
+  arg6 = (int)jarg6; 
+  result = (btCollisionObjectWrapper *)new btCollisionObjectWrapper((btCollisionObjectWrapper const *)arg1,(btCollisionShape const *)arg2,(btCollisionObject const *)arg3,(btTransform const &)*arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionObjectWrapper_getWorldTransform(void * jarg1) {
   void * jresult ;
   btCollisionObjectWrapper *arg1 = (btCollisionObjectWrapper *) 0 ;
@@ -8749,13 +8720,13 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionObjectWrapper_getCollisionShape(
   return jresult;
 }
 
-/*
+
 SWIGEXPORT void SWIGSTDCALL CSharp_delete_btCollisionObjectWrapper(void * jarg1) {
   btCollisionObjectWrapper *arg1 = (btCollisionObjectWrapper *) 0 ;
   
   arg1 = (btCollisionObjectWrapper *)jarg1; 
   delete arg1;
-}*/
+}
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_gContactAddedCallback_set(void * jarg1) {
@@ -30172,8 +30143,8 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_brid
   result = (btAlignedObjectArray< btBridgeProxy * > *)& ((arg1)->m_bridgeProxies);
   jresult = (void *)result; 
   return jresult;
-}*/
-
+}
+*/
 
 SWIGEXPORT void SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(void * jarg1, void * jarg2) {
   btMultiSapBroadphase::btMultiSapProxy *arg1 = (btMultiSapBroadphase::btMultiSapProxy *) 0 ;

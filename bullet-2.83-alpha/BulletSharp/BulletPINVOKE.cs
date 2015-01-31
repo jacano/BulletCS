@@ -2131,6 +2131,9 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionObjectWrapper_m_index_get")]
   public static extern int btCollisionObjectWrapper_m_index_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btCollisionObjectWrapper")]
+  public static extern global::System.IntPtr new_btCollisionObjectWrapper(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, int jarg5, int jarg6);
+
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionObjectWrapper_getWorldTransform")]
   public static extern global::System.IntPtr btCollisionObjectWrapper_getWorldTransform(global::System.Runtime.InteropServices.HandleRef jarg1);
 

@@ -1,4 +1,4 @@
-%module(directors="1") Bullet
+%module Bullet
 
 #pragma SWIG nowarn=516, 201
 
@@ -18,12 +18,12 @@
 %ignore operator /=;
 %ignore operator %=;
 
-//%ignore operator [];
-//%ignore operator ();
-//%ignore operator new[];
-//%ignore operator delete[];
-//%ignore operator new;
-//%ignore operator delete;
+%ignore operator [];
+%ignore operator ();
+%ignore operator new[];
+%ignore operator delete[];
+%ignore operator new;
+%ignore operator delete;
 
 %include "arrays_csharp.i"
 %include "std_auto_ptr.i"
