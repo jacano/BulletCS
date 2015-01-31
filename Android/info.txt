@@ -1,2 +1,6 @@
+Android.mk:
 https://github.com/lvonasek/Open4speed/tree/master/support/bullet-2.83-alpha
+
+SWIG Bullet:
 https://github.com/sanglin307/bulletlib-2.81-rev2613/tree/master/src
+https://github.com/libgdx/libgdx/blob/master/extensions/gdx-bullet/jni/swig/dynamics/btRigidBody.i
