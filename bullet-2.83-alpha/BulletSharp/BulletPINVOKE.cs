@@ -6988,12 +6988,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_bt32BitAxisSweep3")]
   public static extern void delete_bt32BitAxisSweep3(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_set")]
-  public static extern void btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_get")]
-  public static extern global::System.IntPtr btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set")]
   public static extern void btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 

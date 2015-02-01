@@ -279,23 +279,6 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterStringCallback_Bullet(SWIG_CSharpStringH
 
 #define SWIG_contract_assert(nullreturn, expr, msg) if (!(expr)) {SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentOutOfRangeException, msg, ""); return nullreturn; } else
 
-/*  Errors in SWIG */
-#define  SWIG_UnknownError    	   -1
-#define  SWIG_IOError        	   -2
-#define  SWIG_RuntimeError   	   -3
-#define  SWIG_IndexError     	   -4
-#define  SWIG_TypeError      	   -5
-#define  SWIG_DivisionByZero 	   -6
-#define  SWIG_OverflowError  	   -7
-#define  SWIG_SyntaxError    	   -8
-#define  SWIG_ValueError     	   -9
-#define  SWIG_SystemError    	   -10
-#define  SWIG_AttributeError 	   -11
-#define  SWIG_MemoryError    	   -12
-#define  SWIG_NullReferenceError   -13
-
-
-
 
 /* Callback for returning strings to C# without leaking memory */
 typedef void * (SWIGSTDCALL* SWIG_CSharpWStringHelperCallback)(const wchar_t *);
@@ -308,71 +291,6 @@ extern "C"
 SWIGEXPORT void SWIGSTDCALL SWIGRegisterWStringCallback_Bullet(SWIG_CSharpWStringHelperCallback callback) {
   SWIG_csharp_wstring_callback = callback;
 }
-
-
-#include <stdexcept>
-
-
-#include <deque>
-#include <stdexcept>
-
-
-#include <map>
-#include <algorithm>
-#include <stdexcept>
-
-
-SWIGINTERN void SWIG_CSharpException(int code, const char *msg) {
-  if (code == SWIG_ValueError) {
-    SWIG_CSharpExceptionArgumentCodes exception_code = SWIG_CSharpArgumentOutOfRangeException;
-    SWIG_CSharpSetPendingExceptionArgument(exception_code, msg, 0);
-  } else {
-    SWIG_CSharpExceptionCodes exception_code = SWIG_CSharpApplicationException;
-    switch(code) {
-    case SWIG_MemoryError:
-      exception_code = SWIG_CSharpOutOfMemoryException;
-      break;
-    case SWIG_IndexError:
-      exception_code = SWIG_CSharpIndexOutOfRangeException;
-      break;
-    case SWIG_DivisionByZero:
-      exception_code = SWIG_CSharpDivideByZeroException;
-      break;
-    case SWIG_IOError:
-      exception_code = SWIG_CSharpIOException;
-      break;
-    case SWIG_OverflowError:
-      exception_code = SWIG_CSharpOverflowException;
-      break;
-    case SWIG_RuntimeError:
-    case SWIG_TypeError:
-    case SWIG_SyntaxError:
-    case SWIG_SystemError:
-    case SWIG_UnknownError:
-    default:
-      exception_code = SWIG_CSharpApplicationException;
-      break;
-    }
-    SWIG_CSharpSetPendingException(exception_code, msg);
-  }
-}
-
-
-#include <stdexcept>
-
-
-#include <utility>
-
-
-#include <string>
-
-
-#include <vector>
-#include <algorithm>
-#include <stdexcept>
-
-
-#include <string>
 
 
 	#include "btBulletCollisionCommon.h"
@@ -30123,28 +30041,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_bt32BitAxisSweep3(void * jarg1) {
   delete arg1;
 }
 
-/*
-SWIGEXPORT void SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_set(void * jarg1, void * jarg2) {
-  btMultiSapBroadphase::btMultiSapProxy *arg1 = (btMultiSapBroadphase::btMultiSapProxy *) 0 ;
-  btAlignedObjectArray< btBridgeProxy * > *arg2 = (btAlignedObjectArray< btBridgeProxy * > *) 0 ;
-  
-  arg1 = (btMultiSapBroadphase::btMultiSapProxy *)jarg1; 
-  arg2 = (btAlignedObjectArray< btBridgeProxy * > *)jarg2; 
-  if (arg1) (arg1)->m_bridgeProxies = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_get(void * jarg1) {
-  void * jresult ;
-  btMultiSapBroadphase::btMultiSapProxy *arg1 = (btMultiSapBroadphase::btMultiSapProxy *) 0 ;
-  btAlignedObjectArray< btBridgeProxy * > *result = 0 ;
-  
-  arg1 = (btMultiSapBroadphase::btMultiSapProxy *)jarg1; 
-  result = (btAlignedObjectArray< btBridgeProxy * > *)& ((arg1)->m_bridgeProxies);
-  jresult = (void *)result; 
-  return jresult;
-}
-*/
 
 SWIGEXPORT void SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(void * jarg1, void * jarg2) {
   btMultiSapBroadphase::btMultiSapProxy *arg1 = (btMultiSapBroadphase::btMultiSapProxy *) 0 ;

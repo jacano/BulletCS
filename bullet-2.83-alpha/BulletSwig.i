@@ -26,17 +26,6 @@
 %ignore operator delete;
 
 %include "arrays_csharp.i"
-%include "std_auto_ptr.i"
-%include "std_common.i"
-%include "std_deque.i"
-%include "std_except.i"
-%include "std_map.i"
-%include "std_pair.i"
-%include "std_shared_ptr.i"
-%include "std_string.i"
-%include "std_vector.i"
-%include "std_wstring.i"
-%include "stl.i"
 %include "swigtype_inout.i"
 %include "typemaps.i"
 %include "wchar.i"
@@ -51,7 +40,7 @@
 %ignore btSequentialImpulseConstraintSolver::getSSE4_1ConstraintRowSolverGeneric();
 %ignore btSequentialImpulseConstraintSolver::getSSE4_1ConstraintRowSolverLowerLimit();
 
-//%ignore btAlignedObjectArray<btBridgeProxy*> m_bridgeProxies;
+%ignore m_bridgeProxies;
 
 %{
 	#include "btBulletCollisionCommon.h"

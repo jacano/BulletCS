@@ -68,17 +68,6 @@ public class btMultiSapBroadphase : btBroadphaseInterface {
       }
     }
   
-    public SWIGTYPE_p_btAlignedObjectArrayT_btBridgeProxy_p_t m_bridgeProxies {
-      set {
-        BulletPINVOKE.btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_set(swigCPtr, SWIGTYPE_p_btAlignedObjectArrayT_btBridgeProxy_p_t.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btMultiSapBroadphase_btMultiSapProxy_m_bridgeProxies_get(swigCPtr);
-        SWIGTYPE_p_btAlignedObjectArrayT_btBridgeProxy_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_btAlignedObjectArrayT_btBridgeProxy_p_t(cPtr, false);
-        return ret;
-      } 
-    }
-  
     public btVector3 m_aabbMin {
       set {
         BulletPINVOKE.btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(swigCPtr, btVector3.getCPtr(value));
