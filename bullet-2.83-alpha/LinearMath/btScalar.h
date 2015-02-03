@@ -287,12 +287,12 @@ static int btNanMask = 0x7F800001;
 #endif
 
 #ifndef BT_INFINITY
-static  int btInfinityMask = 0x7F800000;
+static int btInfinityMask = 0x7F800000;
 #define BT_INFINITY (*(float*)&btInfinityMask)
-inline int btGetInfinityMask()//suppress stupid compiler warning
+/*inline int btGetInfinityMask()//suppress stupid compiler warning
 {
 	return btInfinityMask;
-}
+}*/
 #endif
 
 //use this, in case there are clashes (such as xnamath.h)
@@ -343,12 +343,12 @@ inline __m128 operator * (const __m128 A, const __m128 B)
 #else//BT_USE_NEON
 
 	#ifndef BT_INFINITY
-	static  int btInfinityMask = 0x7F800000;
+	static int btInfinityMask = 0x7F800000;
 	#define BT_INFINITY (*(float*)&btInfinityMask)
-	inline int btGetInfinityMask()//suppress stupid compiler warning
+	/*inline int btGetInfinityMask()//suppress stupid compiler warning
 	{
 		return btInfinityMask;
-	}
+	}*/
 	#endif
 #endif//BT_USE_NEON
 

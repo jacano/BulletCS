@@ -293,8 +293,8 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterWStringCallback_Bullet(SWIG_CSharpWStrin
 }
 
 
-	#include "btBulletCollisionCommon.h"
-	#include "btBulletDynamicsCommon.h"
+#include "btBulletCollisionCommon.h"
+#include "btBulletDynamicsCommon.h"
 
 
 #ifdef __cplusplus
@@ -344,16 +344,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btInfinityMask_get() {
   int result;
   
   result = (int)btInfinityMask;
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_btGetInfinityMask() {
-  int jresult ;
-  int result;
-  
-  result = (int)btGetInfinityMask();
   jresult = result; 
   return jresult;
 }

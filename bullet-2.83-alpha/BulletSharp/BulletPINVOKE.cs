@@ -223,9 +223,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btInfinityMask_get")]
   public static extern int btInfinityMask_get();
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btGetInfinityMask")]
-  public static extern int btGetInfinityMask();
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSqrt")]
   public static extern float btSqrt(float jarg1);
 

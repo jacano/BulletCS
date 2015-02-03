@@ -43,8 +43,8 @@
 %ignore m_bridgeProxies;
 
 %{
-	#include "btBulletCollisionCommon.h"
-	#include "btBulletDynamicsCommon.h"
+#include "btBulletCollisionCommon.h"
+#include "btBulletDynamicsCommon.h"
 %}
 
 %include "btBulletCollisionCommon.h"
