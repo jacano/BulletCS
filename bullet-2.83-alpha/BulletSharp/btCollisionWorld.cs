@@ -362,50 +362,6 @@ public class btCollisionWorld : global::System.IDisposable {
       if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
     }
   
-    public btVector3 m_rayFromWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_rayToWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitNormalWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitPointWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
     public override float addSingleResult(btCollisionWorld.LocalRayResult rayResult, bool normalInWorldSpace) {
       float ret = BulletPINVOKE.btCollisionWorld_ClosestRayResultCallback_addSingleResult(swigCPtr, btCollisionWorld.LocalRayResult.getCPtr(rayResult), normalInWorldSpace);
       if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
@@ -454,28 +410,6 @@ public class btCollisionWorld : global::System.IDisposable {
       get {
         global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_AllHitsRayResultCallback_m_collisionObjects_get(swigCPtr);
         SWIGTYPE_p_btAlignedObjectArrayT_btCollisionObject_const_p_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_btAlignedObjectArrayT_btCollisionObject_const_p_t(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_rayFromWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_rayToWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
         return ret;
       } 
     }
@@ -573,28 +507,6 @@ public class btCollisionWorld : global::System.IDisposable {
       get {
         global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_LocalConvexResult_m_localShapeInfo_get(swigCPtr);
         btCollisionWorld.LocalShapeInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new btCollisionWorld.LocalShapeInfo(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitNormalLocal {
-      set {
-        BulletPINVOKE.btCollisionWorld_LocalConvexResult_m_hitNormalLocal_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_LocalConvexResult_m_hitNormalLocal_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitPointLocal {
-      set {
-        BulletPINVOKE.btCollisionWorld_LocalConvexResult_m_hitPointLocal_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_LocalConvexResult_m_hitPointLocal_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
         return ret;
       } 
     }
@@ -739,28 +651,6 @@ public class btCollisionWorld : global::System.IDisposable {
       } 
       get {
         global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestConvexResultCallback_m_convexToWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitNormalWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_get(swigCPtr);
-        btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-        return ret;
-      } 
-    }
-  
-    public btVector3 m_hitPointWorld {
-      set {
-        BulletPINVOKE.btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_set(swigCPtr, btVector3.getCPtr(value));
-      } 
-      get {
-        global::System.IntPtr cPtr = BulletPINVOKE.btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_get(swigCPtr);
         btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
         return ret;
       } 

@@ -331,24 +331,6 @@ SWIGEXPORT double SWIGSTDCALL CSharp_BT_LARGE_FLOAT_get() {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_btInfinityMask_set(int jarg1) {
-  int arg1 ;
-  
-  arg1 = (int)jarg1; 
-  btInfinityMask = arg1;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_btInfinityMask_get() {
-  int jresult ;
-  int result;
-  
-  result = (int)btInfinityMask;
-  jresult = result; 
-  return jresult;
-}
-
-
 SWIGEXPORT float SWIGSTDCALL CSharp_btSqrt(float jarg1) {
   float jresult ;
   btScalar arg1 ;
@@ -826,18 +808,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btTypedObject_m_objectType_get(void * jarg1) {
   
   arg1 = (btTypedObject *)jarg1; 
   result = (int) ((arg1)->m_objectType);
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT int SWIGSTDCALL CSharp_btTypedObject_getObjectType(void * jarg1) {
-  int jresult ;
-  btTypedObject *arg1 = (btTypedObject *) 0 ;
-  int result;
-  
-  arg1 = (btTypedObject *)jarg1; 
-  result = (int)((btTypedObject const *)arg1)->getObjectType();
   jresult = result; 
   return jresult;
 }
@@ -7103,116 +7073,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_btManifoldPoint__SWIG_1(void * jarg1, v
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_localPointA_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_localPointA = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_localPointA_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_localPointA);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_localPointB_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_localPointB = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_localPointB_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_localPointB);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_positionWorldOnB_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_positionWorldOnB = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_positionWorldOnB_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_positionWorldOnB);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_positionWorldOnA_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_positionWorldOnA = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_positionWorldOnA_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_positionWorldOnA);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_normalWorldOnB_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_normalWorldOnB = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_normalWorldOnB_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_normalWorldOnB);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_distance1_set(void * jarg1, float jarg2) {
   btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
   btScalar arg2 ;
@@ -7609,50 +7469,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btManifoldPoint_m_lifeTime_get(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_lateralFrictionDir1_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_lateralFrictionDir1 = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_lateralFrictionDir1_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_lateralFrictionDir1);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_m_lateralFrictionDir2_set(void * jarg1, void * jarg2) {
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_lateralFrictionDir2 = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_m_lateralFrictionDir2_get(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_lateralFrictionDir2);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT float SWIGSTDCALL CSharp_btManifoldPoint_getDistance(void * jarg1) {
   float jresult ;
   btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
@@ -7665,42 +7481,6 @@ SWIGEXPORT float SWIGSTDCALL CSharp_btManifoldPoint_getDistance(void * jarg1) {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_btManifoldPoint_getLifeTime(void * jarg1) {
-  int jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  int result;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (int)((btManifoldPoint const *)arg1)->getLifeTime();
-  jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_getPositionWorldOnA(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *) &((btManifoldPoint const *)arg1)->getPositionWorldOnA();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btManifoldPoint_getPositionWorldOnB(void * jarg1) {
-  void * jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btVector3 *) &((btManifoldPoint const *)arg1)->getPositionWorldOnB();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_setDistance(void * jarg1, float jarg2) {
   btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
   btScalar arg2 ;
@@ -7708,18 +7488,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btManifoldPoint_setDistance(void * jarg1, flo
   arg1 = (btManifoldPoint *)jarg1; 
   arg2 = (btScalar)jarg2; 
   (arg1)->setDistance(arg2);
-}
-
-
-SWIGEXPORT float SWIGSTDCALL CSharp_btManifoldPoint_getAppliedImpulse(void * jarg1) {
-  float jresult ;
-  btManifoldPoint *arg1 = (btManifoldPoint *) 0 ;
-  btScalar result;
-  
-  arg1 = (btManifoldPoint *)jarg1; 
-  result = (btScalar)((btManifoldPoint const *)arg1)->getAppliedImpulse();
-  jresult = result; 
-  return jresult;
 }
 
 
@@ -8588,30 +8356,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_btCollisionObjectWrapper(void * jarg1, 
   arg5 = (int)jarg5; 
   arg6 = (int)jarg6; 
   result = (btCollisionObjectWrapper *)new btCollisionObjectWrapper((btCollisionObjectWrapper const *)arg1,(btCollisionShape const *)arg2,(btCollisionObject const *)arg3,(btTransform const &)*arg4,arg5,arg6);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionObjectWrapper_getWorldTransform(void * jarg1) {
-  void * jresult ;
-  btCollisionObjectWrapper *arg1 = (btCollisionObjectWrapper *) 0 ;
-  btTransform *result = 0 ;
-  
-  arg1 = (btCollisionObjectWrapper *)jarg1; 
-  result = (btTransform *) &((btCollisionObjectWrapper const *)arg1)->getWorldTransform();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionObjectWrapper_getCollisionObject(void * jarg1) {
-  void * jresult ;
-  btCollisionObjectWrapper *arg1 = (btCollisionObjectWrapper *) 0 ;
-  btCollisionObject *result = 0 ;
-  
-  arg1 = (btCollisionObjectWrapper *)jarg1; 
-  result = (btCollisionObject *)((btCollisionObjectWrapper const *)arg1)->getCollisionObject();
   jresult = (void *)result; 
   return jresult;
 }
@@ -11609,94 +11353,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_btCollisionWorld_ClosestRayResultCallba
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_rayFromWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_rayFromWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_rayToWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_rayToWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitNormalWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitNormalWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitPointWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitPointWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT float SWIGSTDCALL CSharp_btCollisionWorld_ClosestRayResultCallback_addSingleResult(void * jarg1, void * jarg2, unsigned int jarg3) {
   float jresult ;
   btCollisionWorld::ClosestRayResultCallback *arg1 = (btCollisionWorld::ClosestRayResultCallback *) 0 ;
@@ -11764,50 +11420,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_AllHitsRayResultCallback_m
   
   arg1 = (btCollisionWorld::AllHitsRayResultCallback *)jarg1; 
   result = (btAlignedObjectArray< btCollisionObject const * > *)& ((arg1)->m_collisionObjects);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::AllHitsRayResultCallback *arg1 = (btCollisionWorld::AllHitsRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::AllHitsRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_rayFromWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::AllHitsRayResultCallback *arg1 = (btCollisionWorld::AllHitsRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::AllHitsRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_rayFromWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::AllHitsRayResultCallback *arg1 = (btCollisionWorld::AllHitsRayResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::AllHitsRayResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_rayToWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::AllHitsRayResultCallback *arg1 = (btCollisionWorld::AllHitsRayResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::AllHitsRayResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_rayToWorld);
   jresult = (void *)result; 
   return jresult;
 }
@@ -11974,50 +11586,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_LocalConvexResult_m_localS
   
   arg1 = (btCollisionWorld::LocalConvexResult *)jarg1; 
   result = (btCollisionWorld::LocalShapeInfo *) ((arg1)->m_localShapeInfo);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_LocalConvexResult_m_hitNormalLocal_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::LocalConvexResult *arg1 = (btCollisionWorld::LocalConvexResult *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::LocalConvexResult *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitNormalLocal = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_LocalConvexResult_m_hitNormalLocal_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::LocalConvexResult *arg1 = (btCollisionWorld::LocalConvexResult *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::LocalConvexResult *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitNormalLocal);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_LocalConvexResult_m_hitPointLocal_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::LocalConvexResult *arg1 = (btCollisionWorld::LocalConvexResult *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::LocalConvexResult *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitPointLocal = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_LocalConvexResult_m_hitPointLocal_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::LocalConvexResult *arg1 = (btCollisionWorld::LocalConvexResult *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::LocalConvexResult *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitPointLocal);
   jresult = (void *)result; 
   return jresult;
 }
@@ -12234,50 +11802,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestConvexResultCallbac
   
   arg1 = (btCollisionWorld::ClosestConvexResultCallback *)jarg1; 
   result = (btVector3 *)& ((arg1)->m_convexToWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestConvexResultCallback *arg1 = (btCollisionWorld::ClosestConvexResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestConvexResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitNormalWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestConvexResultCallback *arg1 = (btCollisionWorld::ClosestConvexResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestConvexResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitNormalWorld);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_set(void * jarg1, void * jarg2) {
-  btCollisionWorld::ClosestConvexResultCallback *arg1 = (btCollisionWorld::ClosestConvexResultCallback *) 0 ;
-  btVector3 *arg2 = (btVector3 *) 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestConvexResultCallback *)jarg1; 
-  arg2 = (btVector3 *)jarg2; 
-  if (arg1) (arg1)->m_hitPointWorld = *arg2;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_get(void * jarg1) {
-  void * jresult ;
-  btCollisionWorld::ClosestConvexResultCallback *arg1 = (btCollisionWorld::ClosestConvexResultCallback *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btCollisionWorld::ClosestConvexResultCallback *)jarg1; 
-  result = (btVector3 *)& ((arg1)->m_hitPointWorld);
   jresult = (void *)result; 
   return jresult;
 }
@@ -18494,7 +18018,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_btIndexedMesh(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btTriangleIndexVertexArray__SWIG_0() {
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btTriangleIndexVertexArray() {
   void * jresult ;
   btTriangleIndexVertexArray *result = 0 ;
   
@@ -18509,28 +18033,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_btTriangleIndexVertexArray(void * jarg
   
   arg1 = (btTriangleIndexVertexArray *)jarg1; 
   delete arg1;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btTriangleIndexVertexArray__SWIG_1(int jarg1, void * jarg2, int jarg3, int jarg4, void * jarg5, int jarg6) {
-  void * jresult ;
-  int arg1 ;
-  int *arg2 = (int *) 0 ;
-  int arg3 ;
-  int arg4 ;
-  btScalar *arg5 = (btScalar *) 0 ;
-  int arg6 ;
-  btTriangleIndexVertexArray *result = 0 ;
-  
-  arg1 = (int)jarg1; 
-  arg2 = (int *)jarg2; 
-  arg3 = (int)jarg3; 
-  arg4 = (int)jarg4; 
-  arg5 = (btScalar *)jarg5; 
-  arg6 = (int)jarg6; 
-  result = (btTriangleIndexVertexArray *)new btTriangleIndexVertexArray(arg1,arg2,arg3,arg4,arg5,arg6);
-  jresult = (void *)result; 
-  return jresult;
 }
 
 
@@ -18792,13 +18294,13 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btTriangleIndexVertexArray_getNumSubParts(void
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_btTriangleIndexVertexArray_getIndexedMeshArray__SWIG_0(void * jarg1) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_btTriangleIndexVertexArray_getIndexedMeshArray(void * jarg1) {
   void * jresult ;
   btTriangleIndexVertexArray *arg1 = (btTriangleIndexVertexArray *) 0 ;
   IndexedMeshArray *result = 0 ;
   
   arg1 = (btTriangleIndexVertexArray *)jarg1; 
-  result = (IndexedMeshArray *) &(arg1)->getIndexedMeshArray();
+  result = (IndexedMeshArray *) &((btTriangleIndexVertexArray const *)arg1)->getIndexedMeshArray();
   jresult = (void *)result; 
   return jresult;
 }
@@ -21678,18 +21180,6 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_btHashString_m_hash_get(void * jarg1)
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_btHashString_getHash(void * jarg1) {
-  unsigned int jresult ;
-  btHashString *arg1 = (btHashString *) 0 ;
-  unsigned int result;
-  
-  arg1 = (btHashString *)jarg1; 
-  result = (unsigned int)((btHashString const *)arg1)->getHash();
-  jresult = result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void * SWIGSTDCALL CSharp_new_btHashString(char * jarg1) {
   void * jresult ;
   char *arg1 = (char *) 0 ;
@@ -23343,90 +22833,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_btTriangleInfoMapData(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btBvhTriangleMeshShape__SWIG_0(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
-  void * jresult ;
-  btStridingMeshInterface *arg1 = (btStridingMeshInterface *) 0 ;
-  bool arg2 ;
-  bool arg3 ;
-  btBvhTriangleMeshShape *result = 0 ;
-  
-  arg1 = (btStridingMeshInterface *)jarg1; 
-  arg2 = jarg2 ? true : false; 
-  arg3 = jarg3 ? true : false; 
-  result = (btBvhTriangleMeshShape *)new btBvhTriangleMeshShape(arg1,arg2,arg3);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btBvhTriangleMeshShape__SWIG_1(void * jarg1, unsigned int jarg2) {
-  void * jresult ;
-  btStridingMeshInterface *arg1 = (btStridingMeshInterface *) 0 ;
-  bool arg2 ;
-  btBvhTriangleMeshShape *result = 0 ;
-  
-  arg1 = (btStridingMeshInterface *)jarg1; 
-  arg2 = jarg2 ? true : false; 
-  result = (btBvhTriangleMeshShape *)new btBvhTriangleMeshShape(arg1,arg2);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btBvhTriangleMeshShape__SWIG_2(void * jarg1, unsigned int jarg2, void * jarg3, void * jarg4, unsigned int jarg5) {
-  void * jresult ;
-  btStridingMeshInterface *arg1 = (btStridingMeshInterface *) 0 ;
-  bool arg2 ;
-  btVector3 *arg3 = 0 ;
-  btVector3 *arg4 = 0 ;
-  bool arg5 ;
-  btBvhTriangleMeshShape *result = 0 ;
-  
-  arg1 = (btStridingMeshInterface *)jarg1; 
-  arg2 = jarg2 ? true : false; 
-  arg3 = (btVector3 *)jarg3;
-  if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg4 = (btVector3 *)jarg4;
-  if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg5 = jarg5 ? true : false; 
-  result = (btBvhTriangleMeshShape *)new btBvhTriangleMeshShape(arg1,arg2,(btVector3 const &)*arg3,(btVector3 const &)*arg4,arg5);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btBvhTriangleMeshShape__SWIG_3(void * jarg1, unsigned int jarg2, void * jarg3, void * jarg4) {
-  void * jresult ;
-  btStridingMeshInterface *arg1 = (btStridingMeshInterface *) 0 ;
-  bool arg2 ;
-  btVector3 *arg3 = 0 ;
-  btVector3 *arg4 = 0 ;
-  btBvhTriangleMeshShape *result = 0 ;
-  
-  arg1 = (btStridingMeshInterface *)jarg1; 
-  arg2 = jarg2 ? true : false; 
-  arg3 = (btVector3 *)jarg3;
-  if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg4 = (btVector3 *)jarg4;
-  if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  result = (btBvhTriangleMeshShape *)new btBvhTriangleMeshShape(arg1,arg2,(btVector3 const &)*arg3,(btVector3 const &)*arg4);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_delete_btBvhTriangleMeshShape(void * jarg1) {
   btBvhTriangleMeshShape *arg1 = (btBvhTriangleMeshShape *) 0 ;
   
@@ -24330,20 +23736,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_btCompoundShape_getNumChildShapes(void * jarg1
   arg1 = (btCompoundShape *)jarg1; 
   result = (int)((btCompoundShape const *)arg1)->getNumChildShapes();
   jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btCompoundShape_getChildShape__SWIG_0(void * jarg1, int jarg2) {
-  void * jresult ;
-  btCompoundShape *arg1 = (btCompoundShape *) 0 ;
-  int arg2 ;
-  btCollisionShape *result = 0 ;
-  
-  arg1 = (btCompoundShape *)jarg1; 
-  arg2 = (int)jarg2; 
-  result = (btCollisionShape *)(arg1)->getChildShape(arg2);
-  jresult = (void *)result; 
   return jresult;
 }
 
@@ -29816,222 +29208,6 @@ SWIGEXPORT int SWIGSTDCALL CSharp_gOverlappingPairs_get() {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btAxisSweep3__SWIG_0(void * jarg1, void * jarg2, unsigned short jarg3, void * jarg4, unsigned int jarg5) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned short arg3 ;
-  btOverlappingPairCache *arg4 = (btOverlappingPairCache *) 0 ;
-  bool arg5 ;
-  btAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned short)jarg3; 
-  arg4 = (btOverlappingPairCache *)jarg4; 
-  arg5 = jarg5 ? true : false; 
-  result = (btAxisSweep3 *)new btAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3,arg4,arg5);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btAxisSweep3__SWIG_1(void * jarg1, void * jarg2, unsigned short jarg3, void * jarg4) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned short arg3 ;
-  btOverlappingPairCache *arg4 = (btOverlappingPairCache *) 0 ;
-  btAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned short)jarg3; 
-  arg4 = (btOverlappingPairCache *)jarg4; 
-  result = (btAxisSweep3 *)new btAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3,arg4);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btAxisSweep3__SWIG_2(void * jarg1, void * jarg2, unsigned short jarg3) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned short arg3 ;
-  btAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned short)jarg3; 
-  result = (btAxisSweep3 *)new btAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btAxisSweep3__SWIG_3(void * jarg1, void * jarg2) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  btAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  result = (btAxisSweep3 *)new btAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_delete_btAxisSweep3(void * jarg1) {
-  btAxisSweep3 *arg1 = (btAxisSweep3 *) 0 ;
-  
-  arg1 = (btAxisSweep3 *)jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_bt32BitAxisSweep3__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3, void * jarg4, unsigned int jarg5) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned int arg3 ;
-  btOverlappingPairCache *arg4 = (btOverlappingPairCache *) 0 ;
-  bool arg5 ;
-  bt32BitAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned int)jarg3; 
-  arg4 = (btOverlappingPairCache *)jarg4; 
-  arg5 = jarg5 ? true : false; 
-  result = (bt32BitAxisSweep3 *)new bt32BitAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3,arg4,arg5);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_bt32BitAxisSweep3__SWIG_1(void * jarg1, void * jarg2, unsigned int jarg3, void * jarg4) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned int arg3 ;
-  btOverlappingPairCache *arg4 = (btOverlappingPairCache *) 0 ;
-  bt32BitAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned int)jarg3; 
-  arg4 = (btOverlappingPairCache *)jarg4; 
-  result = (bt32BitAxisSweep3 *)new bt32BitAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3,arg4);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_bt32BitAxisSweep3__SWIG_2(void * jarg1, void * jarg2, unsigned int jarg3) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  unsigned int arg3 ;
-  bt32BitAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg3 = (unsigned int)jarg3; 
-  result = (bt32BitAxisSweep3 *)new bt32BitAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2,arg3);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_bt32BitAxisSweep3__SWIG_3(void * jarg1, void * jarg2) {
-  void * jresult ;
-  btVector3 *arg1 = 0 ;
-  btVector3 *arg2 = 0 ;
-  bt32BitAxisSweep3 *result = 0 ;
-  
-  arg1 = (btVector3 *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  arg2 = (btVector3 *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  result = (bt32BitAxisSweep3 *)new bt32BitAxisSweep3((btVector3 const &)*arg1,(btVector3 const &)*arg2);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_delete_bt32BitAxisSweep3(void * jarg1) {
-  bt32BitAxisSweep3 *arg1 = (bt32BitAxisSweep3 *) 0 ;
-  
-  arg1 = (bt32BitAxisSweep3 *)jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(void * jarg1, void * jarg2) {
   btMultiSapBroadphase::btMultiSapProxy *arg1 = (btMultiSapBroadphase::btMultiSapProxy *) 0 ;
   btVector3 *arg2 = (btVector3 *) 0 ;
@@ -34843,103 +34019,11 @@ SWIGEXPORT float SWIGSTDCALL CSharp_btRigidBody_btRigidBodyConstructionInfo_m_ad
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_0(float jarg1, void * jarg2, void * jarg3, void * jarg4) {
-  void * jresult ;
-  btScalar arg1 ;
-  btMotionState *arg2 = (btMotionState *) 0 ;
-  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
-  btVector3 *arg4 = 0 ;
-  btRigidBody::btRigidBodyConstructionInfo *result = 0 ;
-  
-  arg1 = (btScalar)jarg1; 
-  arg2 = (btMotionState *)jarg2; 
-  arg3 = (btCollisionShape *)jarg3; 
-  arg4 = (btVector3 *)jarg4;
-  if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  result = (btRigidBody::btRigidBodyConstructionInfo *)new btRigidBody::btRigidBodyConstructionInfo(arg1,arg2,arg3,(btVector3 const &)*arg4);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_1(float jarg1, void * jarg2, void * jarg3) {
-  void * jresult ;
-  btScalar arg1 ;
-  btMotionState *arg2 = (btMotionState *) 0 ;
-  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
-  btRigidBody::btRigidBodyConstructionInfo *result = 0 ;
-  
-  arg1 = (btScalar)jarg1; 
-  arg2 = (btMotionState *)jarg2; 
-  arg3 = (btCollisionShape *)jarg3; 
-  result = (btRigidBody::btRigidBodyConstructionInfo *)new btRigidBody::btRigidBodyConstructionInfo(arg1,arg2,arg3);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_delete_btRigidBody_btRigidBodyConstructionInfo(void * jarg1) {
   btRigidBody::btRigidBodyConstructionInfo *arg1 = (btRigidBody::btRigidBodyConstructionInfo *) 0 ;
   
   arg1 = (btRigidBody::btRigidBodyConstructionInfo *)jarg1; 
   delete arg1;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_0(void * jarg1) {
-  void * jresult ;
-  btRigidBody::btRigidBodyConstructionInfo *arg1 = 0 ;
-  btRigidBody *result = 0 ;
-  
-  arg1 = (btRigidBody::btRigidBodyConstructionInfo *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btRigidBody::btRigidBodyConstructionInfo const & type is null", 0);
-    return 0;
-  } 
-  result = (btRigidBody *)new btRigidBody((btRigidBody::btRigidBodyConstructionInfo const &)*arg1);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_1(float jarg1, void * jarg2, void * jarg3, void * jarg4) {
-  void * jresult ;
-  btScalar arg1 ;
-  btMotionState *arg2 = (btMotionState *) 0 ;
-  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
-  btVector3 *arg4 = 0 ;
-  btRigidBody *result = 0 ;
-  
-  arg1 = (btScalar)jarg1; 
-  arg2 = (btMotionState *)jarg2; 
-  arg3 = (btCollisionShape *)jarg3; 
-  arg4 = (btVector3 *)jarg4;
-  if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
-    return 0;
-  } 
-  result = (btRigidBody *)new btRigidBody(arg1,arg2,arg3,(btVector3 const &)*arg4);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_2(float jarg1, void * jarg2, void * jarg3) {
-  void * jresult ;
-  btScalar arg1 ;
-  btMotionState *arg2 = (btMotionState *) 0 ;
-  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
-  btRigidBody *result = 0 ;
-  
-  arg1 = (btScalar)jarg1; 
-  arg2 = (btMotionState *)jarg2; 
-  arg3 = (btCollisionShape *)jarg3; 
-  result = (btRigidBody *)new btRigidBody(arg1,arg2,arg3);
-  jresult = (void *)result; 
-  return jresult;
 }
 
 
@@ -34962,18 +34046,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btRigidBody_proceedToTransform(void * jarg1, 
     return ;
   } 
   (arg1)->proceedToTransform((btTransform const &)*arg2);
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btRigidBody_upcast__SWIG_0(void * jarg1) {
-  void * jresult ;
-  btCollisionObject *arg1 = (btCollisionObject *) 0 ;
-  btRigidBody *result = 0 ;
-  
-  arg1 = (btCollisionObject *)jarg1; 
-  result = (btRigidBody *)btRigidBody::upcast((btCollisionObject const *)arg1);
-  jresult = (void *)result; 
-  return jresult;
 }
 
 
@@ -35104,18 +34176,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btRigidBody_applyDamping(void * jarg1, float 
   arg1 = (btRigidBody *)jarg1; 
   arg2 = (btScalar)jarg2; 
   (arg1)->applyDamping(arg2);
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btRigidBody_getCollisionShape__SWIG_0(void * jarg1) {
-  void * jresult ;
-  btRigidBody *arg1 = (btRigidBody *) 0 ;
-  btCollisionShape *result = 0 ;
-  
-  arg1 = (btRigidBody *)jarg1; 
-  result = (btCollisionShape *)((btRigidBody const *)arg1)->getCollisionShape();
-  jresult = (void *)result; 
-  return jresult;
 }
 
 
@@ -37530,32 +36590,6 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_m_originalBody_get(void * jarg
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_btSolverBody_setWorldTransform(void * jarg1, void * jarg2) {
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btTransform *arg2 = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  arg2 = (btTransform *)jarg2;
-  if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btTransform const & type is null", 0);
-    return ;
-  } 
-  (arg1)->setWorldTransform((btTransform const &)*arg2);
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_getWorldTransform(void * jarg1) {
-  void * jresult ;
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btTransform *result = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  result = (btTransform *) &((btSolverBody const *)arg1)->getWorldTransform();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT void SWIGSTDCALL CSharp_btSolverBody_getVelocityInLocalPointNoDelta(void * jarg1, void * jarg2, void * jarg3) {
   btSolverBody *arg1 = (btSolverBody *) 0 ;
   btVector3 *arg2 = 0 ;
@@ -37651,54 +36685,6 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btSolverBody_internalApplyPushImpulse(void * 
   } 
   arg4 = (btScalar)jarg4; 
   (arg1)->internalApplyPushImpulse((btVector3 const &)*arg2,(btVector3 const &)*arg3,arg4);
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_getDeltaLinearVelocity(void * jarg1) {
-  void * jresult ;
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  result = (btVector3 *) &((btSolverBody const *)arg1)->getDeltaLinearVelocity();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_getDeltaAngularVelocity(void * jarg1) {
-  void * jresult ;
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  result = (btVector3 *) &((btSolverBody const *)arg1)->getDeltaAngularVelocity();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_getPushVelocity(void * jarg1) {
-  void * jresult ;
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  result = (btVector3 *) &((btSolverBody const *)arg1)->getPushVelocity();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_btSolverBody_getTurnVelocity(void * jarg1) {
-  void * jresult ;
-  btSolverBody *arg1 = (btSolverBody *) 0 ;
-  btVector3 *result = 0 ;
-  
-  arg1 = (btSolverBody *)jarg1; 
-  result = (btVector3 *) &((btSolverBody const *)arg1)->getTurnVelocity();
-  jresult = (void *)result; 
-  return jresult;
 }
 
 

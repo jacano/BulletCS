@@ -243,35 +243,11 @@ public class btRigidBody : btCollisionObject {
       } 
     }
   
-    public btRigidBodyConstructionInfo(float mass, btMotionState motionState, btCollisionShape collisionShape, btVector3 localInertia) : this(BulletPINVOKE.new_btRigidBody_btRigidBodyConstructionInfo__SWIG_0(mass, btMotionState.getCPtr(motionState), btCollisionShape.getCPtr(collisionShape), btVector3.getCPtr(localInertia)), true) {
-      if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-    }
-  
-    public btRigidBodyConstructionInfo(float mass, btMotionState motionState, btCollisionShape collisionShape) : this(BulletPINVOKE.new_btRigidBody_btRigidBodyConstructionInfo__SWIG_1(mass, btMotionState.getCPtr(motionState), btCollisionShape.getCPtr(collisionShape)), true) {
-    }
-  
-  }
-
-  public btRigidBody(btRigidBody.btRigidBodyConstructionInfo constructionInfo) : this(BulletPINVOKE.new_btRigidBody__SWIG_0(btRigidBody.btRigidBodyConstructionInfo.getCPtr(constructionInfo)), true) {
-    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public btRigidBody(float mass, btMotionState motionState, btCollisionShape collisionShape, btVector3 localInertia) : this(BulletPINVOKE.new_btRigidBody__SWIG_1(mass, btMotionState.getCPtr(motionState), btCollisionShape.getCPtr(collisionShape), btVector3.getCPtr(localInertia)), true) {
-    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public btRigidBody(float mass, btMotionState motionState, btCollisionShape collisionShape) : this(BulletPINVOKE.new_btRigidBody__SWIG_2(mass, btMotionState.getCPtr(motionState), btCollisionShape.getCPtr(collisionShape)), true) {
   }
 
   public void proceedToTransform(btTransform newTrans) {
     BulletPINVOKE.btRigidBody_proceedToTransform(swigCPtr, btTransform.getCPtr(newTrans));
     if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public static btRigidBody upcast(btCollisionObject colObj) {
-    global::System.IntPtr cPtr = BulletPINVOKE.btRigidBody_upcast__SWIG_0(btCollisionObject.getCPtr(colObj));
-    btRigidBody ret = (cPtr == global::System.IntPtr.Zero) ? null : new btRigidBody(cPtr, false);
-    return ret;
   }
 
   public void predictIntegratedTransform(float step, btTransform predictedTransform) {
@@ -323,12 +299,6 @@ public class btRigidBody : btCollisionObject {
 
   public void applyDamping(float timeStep) {
     BulletPINVOKE.btRigidBody_applyDamping(swigCPtr, timeStep);
-  }
-
-  public new btCollisionShape getCollisionShape() {
-    global::System.IntPtr cPtr = BulletPINVOKE.btRigidBody_getCollisionShape__SWIG_0(swigCPtr);
-    btCollisionShape ret = (cPtr == global::System.IntPtr.Zero) ? null : new btCollisionShape(cPtr, false);
-    return ret;
   }
 
   public void setMassProps(float mass, btVector3 inertia) {

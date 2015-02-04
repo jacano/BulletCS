@@ -47,61 +47,6 @@ public class btManifoldPoint : global::System.IDisposable {
     if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public btVector3 m_localPointA {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_localPointA_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_localPointA_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public btVector3 m_localPointB {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_localPointB_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_localPointB_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public btVector3 m_positionWorldOnB {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_positionWorldOnB_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_positionWorldOnB_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public btVector3 m_positionWorldOnA {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_positionWorldOnA_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_positionWorldOnA_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public btVector3 m_normalWorldOnB {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_normalWorldOnB_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_normalWorldOnB_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
   public float m_distance1 {
     set {
       BulletPINVOKE.btManifoldPoint_m_distance1_set(swigCPtr, value);
@@ -283,55 +228,13 @@ public class btManifoldPoint : global::System.IDisposable {
     } 
   }
 
-  public btVector3 m_lateralFrictionDir1 {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_lateralFrictionDir1_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_lateralFrictionDir1_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
-  public btVector3 m_lateralFrictionDir2 {
-    set {
-      BulletPINVOKE.btManifoldPoint_m_lateralFrictionDir2_set(swigCPtr, btVector3.getCPtr(value));
-    } 
-    get {
-      global::System.IntPtr cPtr = BulletPINVOKE.btManifoldPoint_m_lateralFrictionDir2_get(swigCPtr);
-      btVector3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new btVector3(cPtr, false);
-      return ret;
-    } 
-  }
-
   public float getDistance() {
     float ret = BulletPINVOKE.btManifoldPoint_getDistance(swigCPtr);
     return ret;
   }
 
-  public int getLifeTime() {
-    int ret = BulletPINVOKE.btManifoldPoint_getLifeTime(swigCPtr);
-    return ret;
-  }
-
-  public btVector3 getPositionWorldOnA() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btManifoldPoint_getPositionWorldOnA(swigCPtr), false);
-    return ret;
-  }
-
-  public btVector3 getPositionWorldOnB() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btManifoldPoint_getPositionWorldOnB(swigCPtr), false);
-    return ret;
-  }
-
   public void setDistance(float dist) {
     BulletPINVOKE.btManifoldPoint_setDistance(swigCPtr, dist);
-  }
-
-  public float getAppliedImpulse() {
-    float ret = BulletPINVOKE.btManifoldPoint_getAppliedImpulse(swigCPtr);
-    return ret;
   }
 
 }

@@ -217,12 +217,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_BT_LARGE_FLOAT_get")]
   public static extern double BT_LARGE_FLOAT_get();
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btInfinityMask_set")]
-  public static extern void btInfinityMask_set(int jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btInfinityMask_get")]
-  public static extern int btInfinityMask_get();
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSqrt")]
   public static extern float btSqrt(float jarg1);
 
@@ -336,9 +330,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTypedObject_m_objectType_get")]
   public static extern int btTypedObject_m_objectType_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTypedObject_getObjectType")]
-  public static extern int btTypedObject_getObjectType(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btTypedObject")]
   public static extern void delete_btTypedObject(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -1750,36 +1741,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btManifoldPoint__SWIG_1")]
   public static extern global::System.IntPtr new_btManifoldPoint__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_localPointA_set")]
-  public static extern void btManifoldPoint_m_localPointA_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_localPointA_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_localPointA_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_localPointB_set")]
-  public static extern void btManifoldPoint_m_localPointB_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_localPointB_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_localPointB_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_positionWorldOnB_set")]
-  public static extern void btManifoldPoint_m_positionWorldOnB_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_positionWorldOnB_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_positionWorldOnB_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_positionWorldOnA_set")]
-  public static extern void btManifoldPoint_m_positionWorldOnA_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_positionWorldOnA_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_positionWorldOnA_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_normalWorldOnB_set")]
-  public static extern void btManifoldPoint_m_normalWorldOnB_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_normalWorldOnB_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_normalWorldOnB_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_distance1_set")]
   public static extern void btManifoldPoint_m_distance1_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
 
@@ -1888,35 +1849,11 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_lifeTime_get")]
   public static extern int btManifoldPoint_m_lifeTime_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_lateralFrictionDir1_set")]
-  public static extern void btManifoldPoint_m_lateralFrictionDir1_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_lateralFrictionDir1_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_lateralFrictionDir1_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_lateralFrictionDir2_set")]
-  public static extern void btManifoldPoint_m_lateralFrictionDir2_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_m_lateralFrictionDir2_get")]
-  public static extern global::System.IntPtr btManifoldPoint_m_lateralFrictionDir2_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_getDistance")]
   public static extern float btManifoldPoint_getDistance(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_getLifeTime")]
-  public static extern int btManifoldPoint_getLifeTime(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_getPositionWorldOnA")]
-  public static extern global::System.IntPtr btManifoldPoint_getPositionWorldOnA(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_getPositionWorldOnB")]
-  public static extern global::System.IntPtr btManifoldPoint_getPositionWorldOnB(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_setDistance")]
   public static extern void btManifoldPoint_setDistance(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btManifoldPoint_getAppliedImpulse")]
-  public static extern float btManifoldPoint_getAppliedImpulse(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btManifoldPoint")]
   public static extern void delete_btManifoldPoint(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -2130,12 +2067,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btCollisionObjectWrapper")]
   public static extern global::System.IntPtr new_btCollisionObjectWrapper(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, int jarg5, int jarg6);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionObjectWrapper_getWorldTransform")]
-  public static extern global::System.IntPtr btCollisionObjectWrapper_getWorldTransform(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionObjectWrapper_getCollisionObject")]
-  public static extern global::System.IntPtr btCollisionObjectWrapper_getCollisionObject(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionObjectWrapper_getCollisionShape")]
   public static extern global::System.IntPtr btCollisionObjectWrapper_getCollisionShape(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -2851,30 +2782,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btCollisionWorld_ClosestRayResultCallback")]
   public static extern global::System.IntPtr new_btCollisionWorld_ClosestRayResultCallback(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_set")]
-  public static extern void btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestRayResultCallback_m_rayFromWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_set")]
-  public static extern void btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestRayResultCallback_m_rayToWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_set")]
-  public static extern void btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestRayResultCallback_m_hitNormalWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_set")]
-  public static extern void btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestRayResultCallback_m_hitPointWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestRayResultCallback_addSingleResult")]
   public static extern float btCollisionWorld_ClosestRayResultCallback_addSingleResult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
 
@@ -2889,18 +2796,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_collisionObjects_get")]
   public static extern global::System.IntPtr btCollisionWorld_AllHitsRayResultCallback_m_collisionObjects_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_set")]
-  public static extern void btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_AllHitsRayResultCallback_m_rayFromWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_set")]
-  public static extern void btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_AllHitsRayResultCallback_m_rayToWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_AllHitsRayResultCallback_m_hitNormalWorld_set")]
   public static extern void btCollisionWorld_AllHitsRayResultCallback_m_hitNormalWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2940,18 +2835,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_localShapeInfo_get")]
   public static extern global::System.IntPtr btCollisionWorld_LocalConvexResult_m_localShapeInfo_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_hitNormalLocal_set")]
-  public static extern void btCollisionWorld_LocalConvexResult_m_hitNormalLocal_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_hitNormalLocal_get")]
-  public static extern global::System.IntPtr btCollisionWorld_LocalConvexResult_m_hitNormalLocal_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_hitPointLocal_set")]
-  public static extern void btCollisionWorld_LocalConvexResult_m_hitPointLocal_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_hitPointLocal_get")]
-  public static extern global::System.IntPtr btCollisionWorld_LocalConvexResult_m_hitPointLocal_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_LocalConvexResult_m_hitFraction_set")]
   public static extern void btCollisionWorld_LocalConvexResult_m_hitFraction_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
@@ -3006,18 +2889,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_convexToWorld_get")]
   public static extern global::System.IntPtr btCollisionWorld_ClosestConvexResultCallback_m_convexToWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_set")]
-  public static extern void btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestConvexResultCallback_m_hitNormalWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_set")]
-  public static extern void btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_get")]
-  public static extern global::System.IntPtr btCollisionWorld_ClosestConvexResultCallback_m_hitPointWorld_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCollisionWorld_ClosestConvexResultCallback_m_hitCollisionObject_set")]
   public static extern void btCollisionWorld_ClosestConvexResultCallback_m_hitCollisionObject_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -4333,14 +4204,11 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btIndexedMesh")]
   public static extern void delete_btIndexedMesh(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btTriangleIndexVertexArray__SWIG_0")]
-  public static extern global::System.IntPtr new_btTriangleIndexVertexArray__SWIG_0();
+  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btTriangleIndexVertexArray")]
+  public static extern global::System.IntPtr new_btTriangleIndexVertexArray();
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btTriangleIndexVertexArray")]
   public static extern void delete_btTriangleIndexVertexArray(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btTriangleIndexVertexArray__SWIG_1")]
-  public static extern global::System.IntPtr new_btTriangleIndexVertexArray__SWIG_1(int jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, int jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, int jarg6);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTriangleIndexVertexArray_addIndexedMesh__SWIG_0")]
   public static extern void btTriangleIndexVertexArray_addIndexedMesh__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
@@ -4369,8 +4237,8 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTriangleIndexVertexArray_getNumSubParts")]
   public static extern int btTriangleIndexVertexArray_getNumSubParts(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTriangleIndexVertexArray_getIndexedMeshArray__SWIG_0")]
-  public static extern global::System.IntPtr btTriangleIndexVertexArray_getIndexedMeshArray__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTriangleIndexVertexArray_getIndexedMeshArray")]
+  public static extern global::System.IntPtr btTriangleIndexVertexArray_getIndexedMeshArray(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btTriangleIndexVertexArray_preallocateVertices")]
   public static extern void btTriangleIndexVertexArray_preallocateVertices(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
@@ -5059,9 +4927,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btHashString_m_hash_get")]
   public static extern uint btHashString_m_hash_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btHashString_getHash")]
-  public static extern uint btHashString_getHash(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btHashString")]
   public static extern global::System.IntPtr new_btHashString(string jarg1);
 
@@ -5506,18 +5371,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btTriangleInfoMapData")]
   public static extern void delete_btTriangleInfoMapData(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btBvhTriangleMeshShape__SWIG_0")]
-  public static extern global::System.IntPtr new_btBvhTriangleMeshShape__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2, bool jarg3);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btBvhTriangleMeshShape__SWIG_1")]
-  public static extern global::System.IntPtr new_btBvhTriangleMeshShape__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btBvhTriangleMeshShape__SWIG_2")]
-  public static extern global::System.IntPtr new_btBvhTriangleMeshShape__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btBvhTriangleMeshShape__SWIG_3")]
-  public static extern global::System.IntPtr new_btBvhTriangleMeshShape__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btBvhTriangleMeshShape")]
   public static extern void delete_btBvhTriangleMeshShape(global::System.Runtime.InteropServices.HandleRef jarg1);
 
@@ -5733,9 +5586,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCompoundShape_getNumChildShapes")]
   public static extern int btCompoundShape_getNumChildShapes(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCompoundShape_getChildShape__SWIG_0")]
-  public static extern global::System.IntPtr btCompoundShape_getChildShape__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btCompoundShape_getChildTransform__SWIG_0")]
   public static extern global::System.IntPtr btCompoundShape_getChildTransform__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
@@ -6955,36 +6805,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_gOverlappingPairs_get")]
   public static extern int gOverlappingPairs_get();
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btAxisSweep3__SWIG_0")]
-  public static extern global::System.IntPtr new_btAxisSweep3__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, ushort jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btAxisSweep3__SWIG_1")]
-  public static extern global::System.IntPtr new_btAxisSweep3__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, ushort jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btAxisSweep3__SWIG_2")]
-  public static extern global::System.IntPtr new_btAxisSweep3__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, ushort jarg3);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btAxisSweep3__SWIG_3")]
-  public static extern global::System.IntPtr new_btAxisSweep3__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btAxisSweep3")]
-  public static extern void delete_btAxisSweep3(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_bt32BitAxisSweep3__SWIG_0")]
-  public static extern global::System.IntPtr new_bt32BitAxisSweep3__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_bt32BitAxisSweep3__SWIG_1")]
-  public static extern global::System.IntPtr new_bt32BitAxisSweep3__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_bt32BitAxisSweep3__SWIG_2")]
-  public static extern global::System.IntPtr new_bt32BitAxisSweep3__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_bt32BitAxisSweep3__SWIG_3")]
-  public static extern global::System.IntPtr new_bt32BitAxisSweep3__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_bt32BitAxisSweep3")]
-  public static extern void delete_bt32BitAxisSweep3(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set")]
   public static extern void btMultiSapBroadphase_btMultiSapProxy_m_aabbMin_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
@@ -8146,32 +7966,14 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_btRigidBodyConstructionInfo_m_additionalAngularDampingFactor_get")]
   public static extern float btRigidBody_btRigidBodyConstructionInfo_m_additionalAngularDampingFactor_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_0")]
-  public static extern global::System.IntPtr new_btRigidBody_btRigidBodyConstructionInfo__SWIG_0(float jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_1")]
-  public static extern global::System.IntPtr new_btRigidBody_btRigidBodyConstructionInfo__SWIG_1(float jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btRigidBody_btRigidBodyConstructionInfo")]
   public static extern void delete_btRigidBody_btRigidBodyConstructionInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btRigidBody__SWIG_0")]
-  public static extern global::System.IntPtr new_btRigidBody__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btRigidBody__SWIG_1")]
-  public static extern global::System.IntPtr new_btRigidBody__SWIG_1(float jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_new_btRigidBody__SWIG_2")]
-  public static extern global::System.IntPtr new_btRigidBody__SWIG_2(float jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_delete_btRigidBody")]
   public static extern void delete_btRigidBody(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_proceedToTransform")]
   public static extern void btRigidBody_proceedToTransform(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_upcast__SWIG_0")]
-  public static extern global::System.IntPtr btRigidBody_upcast__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_predictIntegratedTransform")]
   public static extern void btRigidBody_predictIntegratedTransform(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
@@ -8205,9 +8007,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_applyDamping")]
   public static extern void btRigidBody_applyDamping(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_getCollisionShape__SWIG_0")]
-  public static extern global::System.IntPtr btRigidBody_getCollisionShape__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btRigidBody_setMassProps")]
   public static extern void btRigidBody_setMassProps(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
@@ -8791,12 +8590,6 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_m_originalBody_get")]
   public static extern global::System.IntPtr btSolverBody_m_originalBody_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_setWorldTransform")]
-  public static extern void btSolverBody_setWorldTransform(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getWorldTransform")]
-  public static extern global::System.IntPtr btSolverBody_getWorldTransform(global::System.Runtime.InteropServices.HandleRef jarg1);
-
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getVelocityInLocalPointNoDelta")]
   public static extern void btSolverBody_getVelocityInLocalPointNoDelta(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
@@ -8811,18 +8604,6 @@ class BulletPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_internalApplyPushImpulse")]
   public static extern void btSolverBody_internalApplyPushImpulse(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getDeltaLinearVelocity")]
-  public static extern global::System.IntPtr btSolverBody_getDeltaLinearVelocity(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getDeltaAngularVelocity")]
-  public static extern global::System.IntPtr btSolverBody_getDeltaAngularVelocity(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getPushVelocity")]
-  public static extern global::System.IntPtr btSolverBody_getPushVelocity(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_getTurnVelocity")]
-  public static extern global::System.IntPtr btSolverBody_getTurnVelocity(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Bullet", EntryPoint="CSharp_btSolverBody_internalGetDeltaLinearVelocity")]
   public static extern global::System.IntPtr btSolverBody_internalGetDeltaLinearVelocity(global::System.Runtime.InteropServices.HandleRef jarg1);

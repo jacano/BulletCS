@@ -63,12 +63,6 @@ public class btCompoundShape : btCollisionShape {
     return ret;
   }
 
-  public btCollisionShape getChildShape(int index) {
-    global::System.IntPtr cPtr = BulletPINVOKE.btCompoundShape_getChildShape__SWIG_0(swigCPtr, index);
-    btCollisionShape ret = (cPtr == global::System.IntPtr.Zero) ? null : new btCollisionShape(cPtr, false);
-    return ret;
-  }
-
   public btTransform getChildTransform(int index) {
     btTransform ret = new btTransform(BulletPINVOKE.btCompoundShape_getChildTransform__SWIG_0(swigCPtr, index), false);
     return ret;

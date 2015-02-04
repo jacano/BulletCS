@@ -183,16 +183,6 @@ public class btSolverBody : global::System.IDisposable {
     } 
   }
 
-  public void setWorldTransform(btTransform worldTransform) {
-    BulletPINVOKE.btSolverBody_setWorldTransform(swigCPtr, btTransform.getCPtr(worldTransform));
-    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public btTransform getWorldTransform() {
-    btTransform ret = new btTransform(BulletPINVOKE.btSolverBody_getWorldTransform(swigCPtr), false);
-    return ret;
-  }
-
   public void getVelocityInLocalPointNoDelta(btVector3 rel_pos, btVector3 velocity) {
     BulletPINVOKE.btSolverBody_getVelocityInLocalPointNoDelta(swigCPtr, btVector3.getCPtr(rel_pos), btVector3.getCPtr(velocity));
     if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
@@ -216,26 +206,6 @@ public class btSolverBody : global::System.IDisposable {
   public void internalApplyPushImpulse(btVector3 linearComponent, btVector3 angularComponent, float impulseMagnitude) {
     BulletPINVOKE.btSolverBody_internalApplyPushImpulse(swigCPtr, btVector3.getCPtr(linearComponent), btVector3.getCPtr(angularComponent), impulseMagnitude);
     if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public btVector3 getDeltaLinearVelocity() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btSolverBody_getDeltaLinearVelocity(swigCPtr), false);
-    return ret;
-  }
-
-  public btVector3 getDeltaAngularVelocity() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btSolverBody_getDeltaAngularVelocity(swigCPtr), false);
-    return ret;
-  }
-
-  public btVector3 getPushVelocity() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btSolverBody_getPushVelocity(swigCPtr), false);
-    return ret;
-  }
-
-  public btVector3 getTurnVelocity() {
-    btVector3 ret = new btVector3(BulletPINVOKE.btSolverBody_getTurnVelocity(swigCPtr), false);
-    return ret;
   }
 
   public btVector3 internalGetDeltaLinearVelocity() {

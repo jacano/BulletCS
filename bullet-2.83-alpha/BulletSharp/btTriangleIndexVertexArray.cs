@@ -39,10 +39,7 @@ public class btTriangleIndexVertexArray : btStridingMeshInterface {
     }
   }
 
-  public btTriangleIndexVertexArray() : this(BulletPINVOKE.new_btTriangleIndexVertexArray__SWIG_0(), true) {
-  }
-
-  public btTriangleIndexVertexArray(int numTriangles, SWIGTYPE_p_int triangleIndexBase, int triangleIndexStride, int numVertices, SWIGTYPE_p_float vertexBase, int vertexStride) : this(BulletPINVOKE.new_btTriangleIndexVertexArray__SWIG_1(numTriangles, SWIGTYPE_p_int.getCPtr(triangleIndexBase), triangleIndexStride, numVertices, SWIGTYPE_p_float.getCPtr(vertexBase), vertexStride), true) {
+  public btTriangleIndexVertexArray() : this(BulletPINVOKE.new_btTriangleIndexVertexArray(), true) {
   }
 
   public void addIndexedMesh(btIndexedMesh mesh, PHY_ScalarType indexType) {
@@ -89,7 +86,7 @@ public class btTriangleIndexVertexArray : btStridingMeshInterface {
   }
 
   public SWIGTYPE_p_btAlignedObjectArrayT_btIndexedMesh_t getIndexedMeshArray() {
-    SWIGTYPE_p_btAlignedObjectArrayT_btIndexedMesh_t ret = new SWIGTYPE_p_btAlignedObjectArrayT_btIndexedMesh_t(BulletPINVOKE.btTriangleIndexVertexArray_getIndexedMeshArray__SWIG_0(swigCPtr), false);
+    SWIGTYPE_p_btAlignedObjectArrayT_btIndexedMesh_t ret = new SWIGTYPE_p_btAlignedObjectArrayT_btIndexedMesh_t(BulletPINVOKE.btTriangleIndexVertexArray_getIndexedMeshArray(swigCPtr), false);
     return ret;
   }
 

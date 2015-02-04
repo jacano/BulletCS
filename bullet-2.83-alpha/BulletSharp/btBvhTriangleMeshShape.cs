@@ -39,20 +39,6 @@ public class btBvhTriangleMeshShape : btTriangleMeshShape {
     }
   }
 
-  public btBvhTriangleMeshShape(btStridingMeshInterface meshInterface, bool useQuantizedAabbCompression, bool buildBvh) : this(BulletPINVOKE.new_btBvhTriangleMeshShape__SWIG_0(btStridingMeshInterface.getCPtr(meshInterface), useQuantizedAabbCompression, buildBvh), true) {
-  }
-
-  public btBvhTriangleMeshShape(btStridingMeshInterface meshInterface, bool useQuantizedAabbCompression) : this(BulletPINVOKE.new_btBvhTriangleMeshShape__SWIG_1(btStridingMeshInterface.getCPtr(meshInterface), useQuantizedAabbCompression), true) {
-  }
-
-  public btBvhTriangleMeshShape(btStridingMeshInterface meshInterface, bool useQuantizedAabbCompression, btVector3 bvhAabbMin, btVector3 bvhAabbMax, bool buildBvh) : this(BulletPINVOKE.new_btBvhTriangleMeshShape__SWIG_2(btStridingMeshInterface.getCPtr(meshInterface), useQuantizedAabbCompression, btVector3.getCPtr(bvhAabbMin), btVector3.getCPtr(bvhAabbMax), buildBvh), true) {
-    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public btBvhTriangleMeshShape(btStridingMeshInterface meshInterface, bool useQuantizedAabbCompression, btVector3 bvhAabbMin, btVector3 bvhAabbMax) : this(BulletPINVOKE.new_btBvhTriangleMeshShape__SWIG_3(btStridingMeshInterface.getCPtr(meshInterface), useQuantizedAabbCompression, btVector3.getCPtr(bvhAabbMin), btVector3.getCPtr(bvhAabbMax)), true) {
-    if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
-  }
-
   public bool getOwnsBvh() {
     bool ret = BulletPINVOKE.btBvhTriangleMeshShape_getOwnsBvh(swigCPtr);
     return ret;

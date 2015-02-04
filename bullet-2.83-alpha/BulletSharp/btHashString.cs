@@ -60,11 +60,6 @@ public class btHashString : global::System.IDisposable {
     } 
   }
 
-  public uint getHash() {
-    uint ret = BulletPINVOKE.btHashString_getHash(swigCPtr);
-    return ret;
-  }
-
   public btHashString(string name) : this(BulletPINVOKE.new_btHashString(name), true) {
   }
 

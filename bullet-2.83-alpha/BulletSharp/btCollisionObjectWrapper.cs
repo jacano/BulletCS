@@ -104,17 +104,6 @@ public class btCollisionObjectWrapper : global::System.IDisposable {
     if (BulletPINVOKE.SWIGPendingException.Pending) throw BulletPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public btTransform getWorldTransform() {
-    btTransform ret = new btTransform(BulletPINVOKE.btCollisionObjectWrapper_getWorldTransform(swigCPtr), false);
-    return ret;
-  }
-
-  public btCollisionObject getCollisionObject() {
-    global::System.IntPtr cPtr = BulletPINVOKE.btCollisionObjectWrapper_getCollisionObject(swigCPtr);
-    btCollisionObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new btCollisionObject(cPtr, false);
-    return ret;
-  }
-
   public btCollisionShape getCollisionShape() {
     global::System.IntPtr cPtr = BulletPINVOKE.btCollisionObjectWrapper_getCollisionShape(swigCPtr);
     btCollisionShape ret = (cPtr == global::System.IntPtr.Zero) ? null : new btCollisionShape(cPtr, false);

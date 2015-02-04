@@ -53,11 +53,6 @@ public class btTypedObject : global::System.IDisposable {
     } 
   }
 
-  public int getObjectType() {
-    int ret = BulletPINVOKE.btTypedObject_getObjectType(swigCPtr);
-    return ret;
-  }
-
 }
 
 }

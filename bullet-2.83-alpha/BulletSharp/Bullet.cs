@@ -16,16 +16,6 @@ public class Bullet {
     return ret;
   }
 
-  public static int btInfinityMask {
-    set {
-      BulletPINVOKE.btInfinityMask_set(value);
-    } 
-    get {
-      int ret = BulletPINVOKE.btInfinityMask_get();
-      return ret;
-    } 
-  }
-
   public static float btSqrt(float y) {
     float ret = BulletPINVOKE.btSqrt(y);
     return ret;
