@@ -104,6 +104,9 @@
 %ignore btRigidBody::getCollisionShape;
 */
 
+%ignore CProfileManager;
+%ignore CProfileNode;
+
 %ignore btSolverBody::getWorldTransform;
 %ignore btSolverBody::setWorldTransform;
 %ignore btSolverBody::getDeltaLinearVelocity;
