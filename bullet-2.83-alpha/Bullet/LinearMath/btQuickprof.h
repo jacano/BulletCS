@@ -25,9 +25,8 @@
 
 
 
-
-
-#define USE_BT_CLOCK 1
+#define BT_NO_PROFILE 1
+//#define USE_BT_CLOCK 1
 
 #ifdef USE_BT_CLOCK
 

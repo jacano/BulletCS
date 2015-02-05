@@ -6922,26 +6922,8 @@ class BulletPINVOKE {
   [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_delete_btDefaultMotionState")]
   public static extern void delete_btDefaultMotionState(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_USE_BT_CLOCK_get")]
-  public static extern int USE_BT_CLOCK_get();
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_new_btClock__SWIG_0")]
-  public static extern global::System.IntPtr new_btClock__SWIG_0();
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_new_btClock__SWIG_1")]
-  public static extern global::System.IntPtr new_btClock__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_delete_btClock")]
-  public static extern void delete_btClock(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_btClock_reset")]
-  public static extern void btClock_reset(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_btClock_getTimeMilliseconds")]
-  public static extern uint btClock_getTimeMilliseconds(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_btClock_getTimeMicroseconds")]
-  public static extern uint btClock_getTimeMicroseconds(global::System.Runtime.InteropServices.HandleRef jarg1);
+  [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_BT_NO_PROFILE_get")]
+  public static extern int BT_NO_PROFILE_get();
 
   [global::System.Runtime.InteropServices.DllImport(Native.dllName, EntryPoint="CSharp_new_CProfileNode")]
   public static extern global::System.IntPtr new_CProfileNode(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);

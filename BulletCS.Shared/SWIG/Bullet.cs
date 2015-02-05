@@ -615,7 +615,7 @@ public class Bullet {
   public static readonly int DBVT_BP_ACCURATESLEEPING = BulletPINVOKE.DBVT_BP_ACCURATESLEEPING_get();
   public static readonly int DBVT_BP_ENABLE_BENCHMARK = BulletPINVOKE.DBVT_BP_ENABLE_BENCHMARK_get();
   public static readonly int USE_OVERLAP_TEST_ON_REMOVES = BulletPINVOKE.USE_OVERLAP_TEST_ON_REMOVES_get();
-  public static readonly int USE_BT_CLOCK = BulletPINVOKE.USE_BT_CLOCK_get();
+  public static readonly int BT_NO_PROFILE = BulletPINVOKE.BT_NO_PROFILE_get();
   public static readonly string btRigidBodyDataName = BulletPINVOKE.btRigidBodyDataName_get();
   public static readonly string btTypedConstraintDataName = BulletPINVOKE.btTypedConstraintDataName_get();
   public static readonly string btPoint2PointConstraintDataName = BulletPINVOKE.btPoint2PointConstraintDataName_get();

@@ -29804,78 +29804,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_btDefaultMotionState(void * jarg1) {
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_USE_BT_CLOCK_get() {
+SWIGEXPORT int SWIGSTDCALL CSharp_BT_NO_PROFILE_get() {
   int jresult ;
   int result;
   
   result = (int)(1);
   jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btClock__SWIG_0() {
-  void * jresult ;
-  btClock *result = 0 ;
-  
-  result = (btClock *)new btClock();
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_btClock__SWIG_1(void * jarg1) {
-  void * jresult ;
-  btClock *arg1 = 0 ;
-  btClock *result = 0 ;
-  
-  arg1 = (btClock *)jarg1;
-  if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btClock const & type is null", 0);
-    return 0;
-  } 
-  result = (btClock *)new btClock((btClock const &)*arg1);
-  jresult = (void *)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_delete_btClock(void * jarg1) {
-  btClock *arg1 = (btClock *) 0 ;
-  
-  arg1 = (btClock *)jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT void SWIGSTDCALL CSharp_btClock_reset(void * jarg1) {
-  btClock *arg1 = (btClock *) 0 ;
-  
-  arg1 = (btClock *)jarg1; 
-  (arg1)->reset();
-}
-
-
-SWIGEXPORT unsigned long SWIGSTDCALL CSharp_btClock_getTimeMilliseconds(void * jarg1) {
-  unsigned long jresult ;
-  btClock *arg1 = (btClock *) 0 ;
-  unsigned long result;
-  
-  arg1 = (btClock *)jarg1; 
-  result = (unsigned long)(arg1)->getTimeMilliseconds();
-  jresult = (unsigned long)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT unsigned long SWIGSTDCALL CSharp_btClock_getTimeMicroseconds(void * jarg1) {
-  unsigned long jresult ;
-  btClock *arg1 = (btClock *) 0 ;
-  unsigned long result;
-  
-  arg1 = (btClock *)jarg1; 
-  result = (unsigned long)(arg1)->getTimeMicroseconds();
-  jresult = (unsigned long)result; 
   return jresult;
 }
 

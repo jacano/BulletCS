@@ -92,6 +92,8 @@
 %ignore btHashString::getHash;
 %ignore btTypedObject::getObjectType;
 
+%ignore btClock;
+
 /*
 %ignore btRigidBody::btRigidBodyConstructionInfo::btRigidBodyConstructionInfo(btScalar mass, btMotionState* motionState, btCollisionShape* collisionShape);
 %ignore btRigidBody::btRigidBodyConstructionInfo::btRigidBodyConstructionInfo(btScalar mass, btMotionState* motionState, btCollisionShape* collisionShape, const btVector3& localInertia);
@@ -114,8 +116,6 @@
 %ignore btInfMaskConverter;
 %ignore btInfinityMask;
 %ignore btGetInfinityMask();
-
-
 
 
 
