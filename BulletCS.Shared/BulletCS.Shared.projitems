@@ -9,6 +9,7 @@
     <Import_RootNamespace>BulletCS.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Native.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SWIG\BroadphaseNativeTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SWIG\bt6DofFlags.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SWIG\btActionInterface.cs" />

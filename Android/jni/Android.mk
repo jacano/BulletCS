@@ -6,9 +6,9 @@ LOCAL_PATH := ../../bullet-2.83-alpha
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libbullet
-FILE_LIST := $(wildcard $(LOCAL_PATH)/BulletCollision/**/*.cpp)
-FILE_LIST += $(wildcard $(LOCAL_PATH)/BulletDynamics/**/*.cpp)
-FILE_LIST += $(wildcard $(LOCAL_PATH)/LinearMath/*.cpp)
+FILE_LIST := $(wildcard $(LOCAL_PATH)/Bullet/BulletCollision/**/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/Bullet/BulletDynamics/**/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/Bullet/LinearMath/*.cpp)
 
 LOCAL_SRC_FILES := $(FILE_LIST:$(LOCAL_PATH)/%=%)
 

@@ -92,6 +92,7 @@
 %ignore btHashString::getHash;
 %ignore btTypedObject::getObjectType;
 
+/*
 %ignore btRigidBody::btRigidBodyConstructionInfo::btRigidBodyConstructionInfo(btScalar mass, btMotionState* motionState, btCollisionShape* collisionShape);
 %ignore btRigidBody::btRigidBodyConstructionInfo::btRigidBodyConstructionInfo(btScalar mass, btMotionState* motionState, btCollisionShape* collisionShape, const btVector3& localInertia);
 %ignore btRigidBody::upcast(const btCollisionObject*);
@@ -99,6 +100,7 @@
 %ignore btRigidBody::btRigidBody(const btRigidBodyConstructionInfo& constructionInfo);
 %ignore btRigidBody::btRigidBody(btScalar mass, btMotionState* motionState, btCollisionShape* collisionShape, const btVector3& localInertia=btVector3(0,0,0));
 %ignore btRigidBody::getCollisionShape;
+*/
 
 %ignore btSolverBody::getWorldTransform;
 %ignore btSolverBody::setWorldTransform;
@@ -122,6 +124,6 @@
 #include "btBulletDynamicsCommon.h"
 %}
 
-%include "btBulletCollisionCommon.h"
-%include "btBulletDynamicsCommon.h"
+%include "Bullet/btBulletCollisionCommon.h"
+%include "Bullet/btBulletDynamicsCommon.h"
 

@@ -34019,11 +34019,103 @@ SWIGEXPORT float SWIGSTDCALL CSharp_btRigidBody_btRigidBodyConstructionInfo_m_ad
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_0(float jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  void * jresult ;
+  btScalar arg1 ;
+  btMotionState *arg2 = (btMotionState *) 0 ;
+  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
+  btVector3 *arg4 = 0 ;
+  btRigidBody::btRigidBodyConstructionInfo *result = 0 ;
+  
+  arg1 = (btScalar)jarg1; 
+  arg2 = (btMotionState *)jarg2; 
+  arg3 = (btCollisionShape *)jarg3; 
+  arg4 = (btVector3 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
+    return 0;
+  } 
+  result = (btRigidBody::btRigidBodyConstructionInfo *)new btRigidBody::btRigidBodyConstructionInfo(arg1,arg2,arg3,(btVector3 const &)*arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody_btRigidBodyConstructionInfo__SWIG_1(float jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  btScalar arg1 ;
+  btMotionState *arg2 = (btMotionState *) 0 ;
+  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
+  btRigidBody::btRigidBodyConstructionInfo *result = 0 ;
+  
+  arg1 = (btScalar)jarg1; 
+  arg2 = (btMotionState *)jarg2; 
+  arg3 = (btCollisionShape *)jarg3; 
+  result = (btRigidBody::btRigidBodyConstructionInfo *)new btRigidBody::btRigidBodyConstructionInfo(arg1,arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_delete_btRigidBody_btRigidBodyConstructionInfo(void * jarg1) {
   btRigidBody::btRigidBodyConstructionInfo *arg1 = (btRigidBody::btRigidBodyConstructionInfo *) 0 ;
   
   arg1 = (btRigidBody::btRigidBodyConstructionInfo *)jarg1; 
   delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_0(void * jarg1) {
+  void * jresult ;
+  btRigidBody::btRigidBodyConstructionInfo *arg1 = 0 ;
+  btRigidBody *result = 0 ;
+  
+  arg1 = (btRigidBody::btRigidBodyConstructionInfo *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btRigidBody::btRigidBodyConstructionInfo const & type is null", 0);
+    return 0;
+  } 
+  result = (btRigidBody *)new btRigidBody((btRigidBody::btRigidBodyConstructionInfo const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_1(float jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  void * jresult ;
+  btScalar arg1 ;
+  btMotionState *arg2 = (btMotionState *) 0 ;
+  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
+  btVector3 *arg4 = 0 ;
+  btRigidBody *result = 0 ;
+  
+  arg1 = (btScalar)jarg1; 
+  arg2 = (btMotionState *)jarg2; 
+  arg3 = (btCollisionShape *)jarg3; 
+  arg4 = (btVector3 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "btVector3 const & type is null", 0);
+    return 0;
+  } 
+  result = (btRigidBody *)new btRigidBody(arg1,arg2,arg3,(btVector3 const &)*arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_btRigidBody__SWIG_2(float jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  btScalar arg1 ;
+  btMotionState *arg2 = (btMotionState *) 0 ;
+  btCollisionShape *arg3 = (btCollisionShape *) 0 ;
+  btRigidBody *result = 0 ;
+  
+  arg1 = (btScalar)jarg1; 
+  arg2 = (btMotionState *)jarg2; 
+  arg3 = (btCollisionShape *)jarg3; 
+  result = (btRigidBody *)new btRigidBody(arg1,arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
 }
 
 
@@ -34046,6 +34138,18 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btRigidBody_proceedToTransform(void * jarg1, 
     return ;
   } 
   (arg1)->proceedToTransform((btTransform const &)*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_btRigidBody_upcast__SWIG_0(void * jarg1) {
+  void * jresult ;
+  btCollisionObject *arg1 = (btCollisionObject *) 0 ;
+  btRigidBody *result = 0 ;
+  
+  arg1 = (btCollisionObject *)jarg1; 
+  result = (btRigidBody *)btRigidBody::upcast((btCollisionObject const *)arg1);
+  jresult = (void *)result; 
+  return jresult;
 }
 
 
@@ -34176,6 +34280,18 @@ SWIGEXPORT void SWIGSTDCALL CSharp_btRigidBody_applyDamping(void * jarg1, float 
   arg1 = (btRigidBody *)jarg1; 
   arg2 = (btScalar)jarg2; 
   (arg1)->applyDamping(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_btRigidBody_getCollisionShape__SWIG_0(void * jarg1) {
+  void * jresult ;
+  btRigidBody *arg1 = (btRigidBody *) 0 ;
+  btCollisionShape *result = 0 ;
+  
+  arg1 = (btRigidBody *)jarg1; 
+  result = (btCollisionShape *)((btRigidBody const *)arg1)->getCollisionShape();
+  jresult = (void *)result; 
+  return jresult;
 }
 
 
